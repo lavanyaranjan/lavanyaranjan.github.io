@@ -1,0 +1,88 @@
+body {
+    font-family: garamond, serif;
+    background-color: #Ece2ff;
+    color: #42026e; 
+    text-decoration: blink;
+}
+h1 {
+    font-size: 35px;
+}
+aside {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.phrase {
+    position: absolute;
+    font-size: 25px;
+}
+
+#phrase1 {
+    top: 30%;
+    left: 30%;
+    animation: bounce 2s infinite ease-in-out 0s;
+}
+
+#phrase2 {
+    top: 10%;
+    right: 10%;
+    animation: bounce 2s infinite ease-in-out 1.5s;
+}
+
+#phrase3 {
+    bottom: 15%;
+    left: 5%;
+    animation: bounce 2s infinite ease-in-out 1s;
+}
+
+#phrase4 {
+    bottom: 45%;
+    right: 20%;
+    animation: bounce 2s infinite ease-in-out 0.5s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#div1 {
+    font-size: 40px;
+}
+
+.bottom-right-text {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px; 
+    padding: 10px;
+    text-align: right;
+    line-height: 1;
+}
+
+.typewriter {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.typewriter-text {
+    overflow: hidden;
+    border-right: 1px solid #333;
+    white-space: nowrap;
+    font-size: 50px;
+    font-weight: bold;
+    animation: typing 7s steps(33) infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 100%;
+    }
+}

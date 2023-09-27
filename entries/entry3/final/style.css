@@ -1,0 +1,106 @@
+body {
+    background: linear-gradient(to bottom, white, #E8e0a1);
+}
+.date {
+    margin-top: 25px;
+    margin-left: 25px;
+    padding: auto;
+    color: #473f03;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+h1 {
+    font-size: 35px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+.bodytext {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    color: #473f03;
+    justify-content: center;
+    font-family: 'EB Garamond', serif;
+}
+#div1 {
+    font-size: 55px;
+}
+#div2 {
+     font-size: 65px;
+}
+#div3 {
+    font-size: 185px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.mind {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    line-height: 0.5;
+}
+.i {
+    background-color: #473f03;
+    border: 1px solid #473f03;
+    height: 2000px;
+    width: 20px;
+    box-align: center;
+    position: static;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 49%;
+}
+#div4 {
+    font-size: 185px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+#div5 {
+    font-size: 185px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+#div6 {
+    font-size: 65px;
+}
+#div7 {
+    font-size: 100px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-stretch: ultra-condensed;
+    font-weight: bold;
+}
+#div8 {
+    font-size: 65px;
+}
+.textcontainer {
+            background-color: black; 
+            color: antiquewhite;
+            padding: 20px; 
+            border: 1px solid black; 
+            border-radius: 5px; */
+            width: 300px; 
+            margin-left: 30%;
+            margin-right: 30%;
+            font-size: 70px;
+}
+.textcontainer:hover {
+            background-color: antiquewhite; 
+            color: black;
+            padding: 20px; 
+            border: 1px solid antiquewhite; 
+            border-radius: 5px; */
+            width: 300px; 
+            margin-left: 30%;
+            margin-right: 30%;
+            font-size: 70px;
+}
+#div10 {
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    color: #473f03;
+    justify-content: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
