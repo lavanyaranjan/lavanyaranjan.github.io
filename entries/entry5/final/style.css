@@ -1,0 +1,68 @@
+html, body {
+    width: auto;
+    height: 3520px;
+    margin: 0;
+    padding: 0;
+    background-image: url(C:/Users/Lavanya/Desktop/lavanyaranjan_cif23/lavanyaranjan.github.io/entries/entry5/final/images/entry5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .date {
+        margin-top: 25px;
+        margin-left: 25px;
+        padding: auto;
+        color: antiquewhite;
+        font-family: 'Smythe', fantasy;
+        }
+
+    h1 {
+    font-size: 35px;
+    }
+
+    h2 {
+    font-size: 30px;
+    }
+
+    h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    }
+
+    .bodytext {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    color: whitesmoke;
+    justify-content: center;
+    font-family: 'Old Standard TT', serif;
+    }
+
+    .flexbox {
+        display: flex;
+        font-size: 20px;
+    }
+
+    #div1, #div2 {
+    flex: 1; 
+    padding: 30px;
+    }
+
+    .div3hover {
+        font-size: 25px;
+    }
+
+    .div3hover:hover {
+        font-size: 35px;
+        transition: 1s ease;
+    }
+
+    #div4 {
+        font-size: 50px;
+    }
+
+    #div5 {
+        font-size: 55px;
+        font-stretch: semi-expanded;
+    }
