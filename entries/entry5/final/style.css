@@ -47,6 +47,8 @@ html, body {
     #div1, #div2 {
     flex: 1; 
     padding: 30px;
+    transform: rotate(45deg);
+
     }
 
     .div3hover {
