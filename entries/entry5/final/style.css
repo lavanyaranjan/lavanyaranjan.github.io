@@ -63,8 +63,25 @@ html, body {
         font-size: 50px;
     }
 
-    #div5 {
-        font-size: 5000px;
+    .div5 {
+        font-size: 50px;
         font-stretch: semi-expanded;
-        transition: 3s ease;
+    }
+
+    .expanding {
+        font-size: 50px;
+        font-stretch: semi-expanded;
+    }
+
+    @keyframes expandText {
+            0% {
+                font-size: 50px;
+            }
+            100% {
+                font-size: 500px;
+            }
+        }
+
+    .expanding {
+        animation: expandText 5s ease-out infinite 3s;
     }
