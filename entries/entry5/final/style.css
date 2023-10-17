@@ -44,6 +44,27 @@ html, body {
         font-size: 20px;
     }
 
+    .ocean {
+            position: relative;
+            width: 100%;
+        }
+
+    .image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+    .div2 {
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            text-align: center;
+            z-index: 1;
+    }
+
     #div1, #div2 {
     flex: 1; 
     padding: 30px;
