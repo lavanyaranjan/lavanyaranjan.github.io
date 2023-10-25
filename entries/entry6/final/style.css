@@ -41,9 +41,15 @@ body::-webkit-scrollbar-track {
     margin-top: 40px;
     margin-left: 40px;
     padding: auto;
-    color: #6f8eb2;
+    color: #2a425e;
     font-family: 'Limelight', sans-serif;
     animation: flicker 3s infinite;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #7a684c;
+    border-radius: 60% 50%; 
+    opacity: 100%;
+    z-index: 1;
 }
 
 @keyframes flicker {
