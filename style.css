@@ -1,5 +1,6 @@
-.body {
-	color: #ffffff;
+body {
+	background-color: red;
+    color: #ffffff;
 	font-family: 'Inter', sans-serif;	
 	display: flex;
     align-items: center;
@@ -31,13 +32,14 @@ body::-webkit-scrollbar-track {
     text-align: center;
     transform: translate(0%, -50%);
     padding: auto;
-    color: white;
+    color: black;
     padding: auto;
     font-family: 'Inter', sans-serif;
     display: inline-block;
     padding: 10px;
     border: 2px solid whitesmoke;
     border-radius: 60% 50%;
+    background-color: white;
 }
 
 .h1 {
