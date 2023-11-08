@@ -2,14 +2,13 @@ body {
             font-family: 'DM Serif Display', serif;
             margin: 20;
             padding: 20;
-            background-color: #915947;
+            background-color: #5D443C;
             color: #EADFD7;
             overflow-y: scroll;
-            background-image: url("background_image.png");
+            background-image: url('background_image.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
             background-size: cover; /* Optional: Adjust the background size (cover, contain, etc.) */
             background-position: center; /* Optional: Adjust the background position (left top, center center, etc.) */
-            background-repeat: no-repeat;
-
+            background-repeat: repeat; /* Optional: Set to 'repeat' if you want the image to repeat */
         }
 
 body::-webkit-scrollbar {
@@ -29,7 +28,6 @@ body::-webkit-scrollbar-track {
     margin-left: 40px;
     padding: auto;
     color: #EADFD7;
-    font-family: 'DM Serif Display', serif;
     display: inline-block;
     padding: 10px;
     border: 2px solid #B38C7C;
@@ -40,33 +38,40 @@ body::-webkit-scrollbar-track {
 
 .h1 {
     font-size: 50px;
+    font-family: 'DM Serif Display', serif;
 }
 
 .h2 {
     font-size: 45px;
+    font-family: 'DM Serif Display', serif;
 }
 
 .h3 {
     font-size: 40px;
+    font-family: 'Old Standard TT', serif;
 }
 
 .bodytext {
-    text-align: right;
+    text-align: center;
     margin: auto;
     padding: auto;
     color: #EADFD7;
-    justify-content: right;
-    font-family: 'DM Serif Display', serif;
+    justify-content: center;
+    font-family: 'Old Standard TT', serif;
     position: absolute;
     display: flex;
     top: 55%; /* Center vertically */
-    right: 5%; /* Adjust the right position */
+    right: 10%; /* Adjust the right position */
     transform: translate(0, -50%); /* Center vertically */
 }
 
 #div1 {
     font-size: 25px;
     font-weight: lighter;
+    position: absolute;
+    display: flex;
+    top: -50%; /* Center vertically */
+    right: -10%; /* Adjust the right position */
 }
 
 #div2 {
@@ -76,7 +81,7 @@ body::-webkit-scrollbar-track {
 .svg-container {
             position: fixed;
             bottom: -12%;
-            left: 12%;
+            left: 17%;
             width: 1000px;
             height: 638.8px;
             z-index: -1;
@@ -93,6 +98,20 @@ body::-webkit-scrollbar-track {
                 filter: brightness(0.5);
             }
             50% {
-                filter: brightness(0.9);
+                filter: brightness(0.8);
             }
         }
+
+.svg-container:hover .sound {
+            position: fixed;
+            bottom: -12%;
+            left: 17%;
+            width: 1000px;
+            height: 638.8px;
+            z-index: -1;
+            display: inline-block;
+        }
+
+    .sound {
+  display: none; /* Hide the audio element initially */
+}
