@@ -2,10 +2,10 @@ body {
             font-family: 'DM Serif Display', serif;
             margin: 20;
             padding: 20;
-            background-color: #EADFD7;
-            color: #3C2415;
+            background-color: #915947;
+            color: #EADFD7;
             overflow-y: scroll;
-            background-image: url("background_image.jpg");
+            background-image: url("background_image.png");
             background-size: cover; /* Optional: Adjust the background size (cover, contain, etc.) */
             background-position: center; /* Optional: Adjust the background position (left top, center center, etc.) */
             background-repeat: no-repeat;
@@ -28,11 +28,11 @@ body::-webkit-scrollbar-track {
     margin-top: 40px;
     margin-left: 40px;
     padding: auto;
-    color: #3C2415;
+    color: #EADFD7;
     font-family: 'DM Serif Display', serif;
     display: inline-block;
     padding: 10px;
-    border: 2px solid #21170B;
+    border: 2px solid #B38C7C;
     border-radius: 60% 50%; 
     opacity: 100%;
     z-index: 1;
@@ -54,29 +54,38 @@ body::-webkit-scrollbar-track {
     text-align: right;
     margin: auto;
     padding: auto;
-    color: #473f03;
+    color: #EADFD7;
     justify-content: right;
     font-family: 'DM Serif Display', serif;
-    font-size: 40px;
     position: absolute;
     display: flex;
-    top: 45%; /* Center vertically */
+    top: 55%; /* Center vertically */
     right: 5%; /* Adjust the right position */
     transform: translate(0, -50%); /* Center vertically */
 }
 
+#div1 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#div2 {
+    font-size: 40px;
+}
+
 .svg-container {
-            position: relative;
-            bottom: 10%;
-            left: 10%;
-            width: 843px;
-            height: 544px;
+            position: fixed;
+            bottom: -12%;
+            left: 12%;
+            width: 1000px;
+            height: 638.8px;
+            z-index: -1;
         }
 
         .intertwined {
             animation: intertwined 5s ease-in-out infinite alternate;
-            width: 843px;
-            height: 544px;
+            width: 1000px;
+            height: 638.8px;
         }
 
         @keyframes intertwined {
@@ -84,6 +93,6 @@ body::-webkit-scrollbar-track {
                 filter: brightness(0.5);
             }
             50% {
-                filter: brightness(0.8);
+                filter: brightness(0.9);
             }
         }
