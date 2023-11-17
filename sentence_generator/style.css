@@ -1,0 +1,33 @@
+body {
+  background-color:  black;
+  font-family: 'Righteous', sans-serif;
+}
+
+section {
+  display:  flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items:  center;
+  height:  100vh;
+}
+
+.button {
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:  papayawhip;
+  color:  black;
+  font-size:  60px;
+  font-size: 20px;
+  text-align:  center;
+  text-align:  center;
+  transition:  all 100ms;
+}
+
+.buttonOn {
+  background-color:  black;
+  color:  papayawhip;
+}
+
+.light {
+  background-color: papayawhip;
+}
