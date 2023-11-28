@@ -1,6 +1,8 @@
 console.log("Lights on!");
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript">
 
-$(document).ready(function() {
+  $(document).ready(function() {
 
       // list one content
       var one = [
@@ -58,7 +60,7 @@ $(document).ready(function() {
         "pothole",
         "crater",
       ];
-            
+      }      
 
       // This is a very common randomizing function.
       // It takes a list (array) and returns one at random.
@@ -87,3 +89,4 @@ $(document).ready(function() {
 
       generate();
 });
+</script>
