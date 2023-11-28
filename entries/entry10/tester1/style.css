@@ -1,5 +1,5 @@
 body {
-  background-color:  black;
+  background-color:#0a1828;
   font-family: 'Righteous', sans-serif;
   color: whitesmoke;
   overflow-x: hidden;
@@ -76,25 +76,29 @@ body::-webkit-scrollbar-track {
   color:  papayawhip;
 }
 
-.maintext {
+ .maintext {
   position: relative;
-  top:10px;
-  justify-content: space-evenly;
+  top: 10px;
+  justify-content: center; /* Center items horizontally */
   align-items: center;
   display: flex;
+  flex-direction: row;
 }
 
-.lyrics1, .lyrics2, .group2, .group3 {
+.group1,.group2 , .group3 {
+  text-align: center; /* Center align text within these groups */
+  margin: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.lyrics1, .lyrics2, .lyrics3 {
   font-size: 17px;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 10px; /* Add some space between lyrics and buttons */
 }
 
 .lyrics3 {
   font-size: 50px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative; 
+  position: relative;
   top: 300px;
 }
