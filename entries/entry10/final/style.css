@@ -32,8 +32,8 @@ body::-webkit-scrollbar-track {
 }
 
 #imageContainer {
-  height: 1920px; /* Adjust height based on your content */
-  width: 1920px;
+  max-height: 500px; /* Adjust height based on your content */
+  width: 100%;
 }
 
 #hiddenImage {
@@ -115,4 +115,5 @@ body::-webkit-scrollbar-track {
   font-size: 50px;
   position: relative;
   top: 300px;
+  margin-bottom: 100px;
 }

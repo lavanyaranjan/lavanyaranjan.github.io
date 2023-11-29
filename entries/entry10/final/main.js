@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-showImageOnScroll();
+  showImageOnScroll();
 
-window.addEventListener('scroll', showImageOnScroll);
+  window.addEventListener('scroll', showImageOnScroll);
+});
