@@ -31,6 +31,20 @@ body::-webkit-scrollbar-track {
     z-index: 1;
 }
 
+#imageContainer {
+  height: 1920px; /* Adjust height based on your content */
+  width: 1920px;
+}
+
+#hiddenImage {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-visible {
+  opacity: 1;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
