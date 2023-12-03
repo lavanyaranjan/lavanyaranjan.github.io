@@ -43,7 +43,6 @@ body::-webkit-scrollbar-track {
     padding: auto;
     color: #6f8eb2;
     font-family: 'Limelight', sans-serif;
-    animation: flicker 3s infinite;
     display: inline-block;
     padding: 10px;
     border: 2px solid #2a425e;
@@ -100,6 +99,7 @@ body::-webkit-scrollbar-track {
     padding: 20px;
     text-align: center;
     font-size: 30px;
+    position: sticky;
     }
 
     .grid-item {
@@ -137,44 +137,57 @@ body::-webkit-scrollbar-track {
     font-size: 40px;
 }
 
+#div2, #div5, #div9, #div12, #div14, #div17, #div21, #div30 {
+    border: 3px solid #881b22;
+
+}
+
 #div2:hover {
     font-weight: bold;
     transition: font-weight 0.7s;
+    background-color: #a10711;
 }
 
 #div5:hover {
     font-weight: bold;
     transition: font-weight 0.7s;
+    background-color: #a10711;
 }
 
 #div9:hover {
     font-weight: bold;
     transition: font-weight 0.7s;
+    background-color: #a10711;
 }
 
 #div12:hover {
     font-weight: bold;
     transition: font-weight 0.7s;
+    background-color: #a10711;
 }
 
 #div14:hover {
     font-weight: bold;
     transition: font-weight 0.7s;
+    background-color: #a10711;
 }
 
 #div17:hover {
     font-weight: bold;
     transition: font-weight 0.7s;
+    background-color: #a10711;
 }
 
 #div21:hover {
     font-weight: bold;
     transition: font-weight 0.7s;
+    background-color: #a10711;
 }
 
 #div30:hover {
     font-weight: bold;
     transition: font-weight 0.7s;
+    background-color: #a10711;
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -233,7 +246,14 @@ body::-webkit-scrollbar-track {
     body {
         background-color: #76437d;
         color: #ffffff;
+        margin: 15px;
         }
+    .grid-container-regular {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 20px;
+    }
         img {
   filter: grayscale(100%);
     } 

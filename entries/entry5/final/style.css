@@ -1,14 +1,10 @@
 body {
-      width: 100%;
-      height: 100%;
-      margin: auto;
-      padding: auto;
-      font-family: 'Josefin Sans', sans-serif;
-      color: #e8d2b0;
-      background-image: url('altbackground.png');
-      background-size: cover;
-      background-position: center;
-    }
+	font-family: 'Comfortaa', sans-serif;
+	background: #572649;
+	color: #e0bbd2; 
+    font-size: 15px;
+    line-height: 0.8;
+}
 
 body::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
@@ -22,91 +18,140 @@ body::-webkit-scrollbar-track {
     background-color: transparent; /* Color of the track (non-scrollable part) */
 }
 
-    .date {
+.date {
     margin-top: 25px;
     margin-left: 25px;
-    color: #FFE8C4;
-    font-family: 'Mate', serif;
+    padding: auto;
     display: inline-block;
     padding: 10px;
-    border: 2px solid #7a684c;
+    border: 2px solid #b55385;
     border-radius: 60% 50%; 
-    opacity: 100%;
-    z-index: 1;
+    font-stretch: condensed;
+    color: #cf91b5;
 }
+
 h1 {
-    font-size: 30px;
+    font-size: 35px;
 }
 h2 {
-    font-size: 25px;
+    font-size: 30px;
 }
 h3 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: lighter;
 }
 
 .bodytext {
-    position: relative;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
+    position: absolute;
+    width: 95vw;
+    margin: 25px;
+    padding: 15px;
+    width: 473px;
+    height: 1190px;
+    background-color: none;
+    opacity: 1;
+    position: absolute;
+    top: 314px;
+    left: 50%;
+    transform: translate(-50%, 40px);
+    color: #E0BBD2;
+    z-index: 8;
 }
 
-.grid-container-regular {
-    display: grid;
-    grid-template-columns: no-repeat(2, 1fr);
-    grid-gap: 30px;
-    padding: 30px;
-    }
-.grid-item, {
-    padding: 20px;
+.bodytext-container {
+    position: absolute;
+    width: 95vw;
+    margin: 25px;
+    padding: 15px;
+    width: 473px;
+    height: 1190px;
+    background-color: #B55385;
+    opacity: 0.5;
+    position: absolute;
+    top: 314px;
+    left: 50%;
+    transform: translate(-50%, 40px);
+    color: #E0BBD2;
+    z-index: 8;
+}
+
+.bodytext {
+    opacity: 1;
+}
+
+
+#div1 {
+    top: 0%;
+    left: 40%;
+    text-align: left;
+}
+
+#div2 {
+    top: 55%;
+    right: 15%;
     text-align: center;
-    font-size: 30px;
-    } 
+}
 
-.div1, .div2 {
-    flex: 1; 
-    padding: 30px;
-    transform: rotate(15deg);
-    line-height: 1.5;
-    }
+#div3 {
+    top: 70%;
+    right: 50%;
+    text-align: left;
+}
 
-    .div3hover {
-        font-size: 25px;
-        line-height: 1.5;
-        border-radius: 60% 50%;
-    }
+#div4 {
+    top: 80%;
+    right: 35%;
+    text-align: right;
+}
 
-    .div3hover:hover {
-        font-size: 35px;
-        transition: 1s ease;
-        border: 2px solid #7a684c
-    }
+#div5 {
+    top: 105%;
+    right: 40%;
+    text-align: left;
+}
 
-    .div4 {
-        font-size: 50px;
-        line-height: 1.5;
-        padding-block: 15px;
-    }
+#div6 {
+    top: 130%;
+    right: 15%;
+    text-align: center;
+}
 
-    .div5 {
-        font-size: 50px;
-        font-stretch: semi-expanded;
-        line-height: 1.5;
-    }
+#div7 {
+    top: 180%;
+    right: 35%;
+    text-align: center;
+}
 
-    .expanding {
-        font-size: 50px;
-        font-stretch: semi-expanded;
-        animation: expandText 5s ease-out infinite 3s;
-        line-height: 1.5;
-    }
+.img {
+    position: absolute;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
 
-    @keyframes expandText {
-            0% {
-                font-size: 50px;
-            }
-            100% {
-                font-size: 500px;
-            }
-        }
+.image1 {
+    transform: translate(178px,195px);
+}
+
+.image2 {
+    transform: translate(-133px,408px);
+}
+
+.image3 {
+    transform: translate(164px,-216px);
+}
+
+.image4 {
+    transform: translate(186px,791px);
+}
+
+.image5 {
+    transform: translate(441px,-307px);
+}
+
+.image6 {
+    transform: translate(256px,484px);
+}
+
+.image7 {
+    transform: translate(177px,300px);
+}

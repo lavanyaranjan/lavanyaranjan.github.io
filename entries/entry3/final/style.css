@@ -1,10 +1,11 @@
 body {
-    background: linear-gradient(to bottom, #fffbd9, #d1c986);
+    background: linear-gradient(to bottom, #3f3005, #Bf9005);
+    background-size: 1.5vw;
     overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 0px; /* Width of the scrollbar */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -19,7 +20,7 @@ body::-webkit-scrollbar-track {
     margin-top: 25px;
     margin-left: 25px;
     padding: auto;
-    color: #473f03;
+    color: #D1ba86;
     font-family: 'Bricolage Grotesque', sans-serif;
     display: inline-block;
     padding: 10px;
@@ -40,15 +41,17 @@ h3 {
     text-align: center;
     margin: auto;
     padding: auto;
-    color: #473f03;
+    color: #fffbd9;
     justify-content: center;
     font-family: 'EB Garamond', serif;
 }
 #div1 {
     font-size: 55px;
+    color: #E8d8b4;
 }
 #div2 {
      font-size: 65px;
+     color: #E8d8b4;
 }
 #div3 {
     font-size: 185px;
@@ -59,8 +62,8 @@ h3 {
     line-height: 0.5;
 }
 .i {
-    background-color: #473f03;
-    border: 1px solid #473f03;
+    background-color: #fffbd9;
+    border: 1px solid #fffbd9;
     height: 2000px;
     width: 20px;
     box-align: center;
@@ -90,6 +93,11 @@ h3 {
 #div8 {
     font-size: 65px;
 }
+
+#div8alt {
+    opacity: 0;
+}
+
 .textcontainer {
             background-color: black; 
             color: antiquewhite;
@@ -118,7 +126,31 @@ h3 {
     text-align: center;
     margin: auto;
     padding: auto;
-    color: #473f03;
+    color: #fffbd9;
     justify-content: center;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    #div8: {
+    opacity: 0;
+}
+
+    #div8alt: {
+    opacity: 100;
+}
+
+    #div8alt::before {
+    content: "i once believed";
+    display: block; /* Ensures the content is on a new line */
+}
+
+    #div8alt::after {
+    content: "love would be";
+    display: block; /* Ensures the content is on a new line */
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+
+@media screen and (max-width: 576px) {
