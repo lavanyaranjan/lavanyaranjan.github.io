@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Farsan&display=swap" rel="stylesheet">
   <title>people watching</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" si+zes="180x180" href="apple-touch-icon.png">
 </head>
 <body>
   <header>
@@ -20,14 +20,17 @@
     </div>
   </header>
   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-  <div class="wrapper">
-    <button class="button1"></button>
-  </div>
-  <div class="maintext">
+  <div class="bodytext-container" id="textContainer">
       <div class="lyrics1">someday i'll be falling without caution,</div>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
       <div class="lyrics2">but for now i'm only</div>
-      <button class="button2">people watching</button>
+      <div class="wrapper">
+      <button class="button1" onmouseenter="showText()" onmouseleave="hideText()">people watching</button>
+      </div>
   </div>
+  <div class="imageContainer">
+      <img src="image.jpg" alt="people watching"></div>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script type="text/javascript" src="main.js"></script>
 </body>

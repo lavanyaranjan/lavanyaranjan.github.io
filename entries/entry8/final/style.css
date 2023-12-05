@@ -1,7 +1,7 @@
 body {
   background-color:#4b4b4b;
   font-family: 'Englebert', cursive;
-  color: #Fad8d7;
+  color: #D98c89;
   overflow-x: hidden;
 }
 
@@ -21,49 +21,79 @@ body::-webkit-scrollbar-track {
     margin-top: 40px;
     margin-left: 40px;
     padding: auto;
-    color: #Fad8d7;
+    color: #D98c89;
     font-family: 'Farsan', cursive;
     display: inline-block;
     padding: 10px;
-    border: 2px solid #Fad8d7;
+    border: 2px solid #C34541;
     border-radius: 60% 50%; 
     opacity: 100%;
     z-index: 1;
+    letter-spacing: 1.2;
 }
 
 .button1  {
   padding: 20px 50px;
-  border-radius: 30px;
-  background-color: #Fad8d7;
+  background-color: #D98c89;
   color: #4b4b4b;
   font-size: 45px;
   text-align: center;
-  position: relative;
+  position: static;
   transition:  all 100ms;
   font-family: 'Englebert', cursive;
 }
 
 .button1:hover {
-  opacity: .8;
+  opacity: .5;
   cursor: pointer;
   transition: 90ms ease;
 }
 
- .maintext {
-  position: relative;
-  top: 10px;
+ .bodytext-container {
+  display: inline;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  justify-content: right;
+  align-items: right;
+  z-index: 2;
+ }
+  
+
+.lyrics1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  position: static;
   justify-content: right;
   align-items: right;
 }
 
-.lyrics1 {
-  font-size: 25px
-  margin-bottom: 10px;
+.lyrics2 {
+  font-size: 45px;
+  position: static;
+  margin-bottom: 100px;
+  justify-content: right;
+  align-items: right;
 }
 
-.lyrics2 {
-  font-size: 30px;
-  position: relative;
-  top: 300px;
-  margin-bottom: 100px;
+.imageContainer {
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 3s;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
