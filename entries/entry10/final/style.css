@@ -31,18 +31,23 @@ body::-webkit-scrollbar-track {
     z-index: 1;
 }
 
-#imageContainer {
-  max-height: 500px; /* Adjust height based on your content */
-  width: 100%;
+.imageContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 2s;
 }
 
-#hiddenImage {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.image-visible {
-  opacity: 1;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .wrapper {

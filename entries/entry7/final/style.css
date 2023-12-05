@@ -4,7 +4,6 @@ body {
             padding: 20;
             background-color: #083848;
             color: #4c8c94;
-            overflow-y: scroll;
         }
 
 body::-webkit-scrollbar {
@@ -46,47 +45,50 @@ body::-webkit-scrollbar-track {
 }
 
 .bodytext {
-    text-align: center;
-    margin: auto;
-    padding: auto;
+    text-align: right;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: 25px;
+    padding: 25px;
     color: #4c8c94;
     justify-content: center;
     font-family: 'Urbanist', sans-serif;
-    position: absolute;
-    display: flex;
-    top: 55%; /* Center vertically */
-    right: 10%; /* Adjust the right position */
-    transform: translate(0, -50%); /* Center vertically */
+    font-weight: lighter;
+    z-index: 1;
 }
 
 #div1 {
     font-size: 25px;
-    font-weight: lighter;
-    position: absolute;
-    display: flex;
-    top: -50%; /* Center vertically */
-    right: -10%; /* Adjust the right position */
 }
 
 #div2 {
-    font-size: 40px;
+    font-size: 50px;
 }
 
-.svg-container {
-            position: fixed;
-            bottom: -12%;
-            left: 17%;
-        }
+#div3 {
+    font-size: 100px;
+}
 
-        .somebody-else {
-            animation: intertwined 5s ease-in-out infinite alternate;
-        }
+.brightness-animation {
+    animation: pulsatingGlow 3s ease-in-out infinite;
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    z-index: -1;
+}
 
-        @keyframes somebody-else {
-            0%, 100% {
-                filter: brightness(0.5);
-            }
-            50% {
-                filter: brightness(0.8);
-            }
-        }
+@keyframes pulsatingGlow {
+    0% {
+        filter: brightness(1) drop-shadow(0 0 10px #19778d); /* Adjust the color as needed */
+        opacity: 1;
+    }
+    50% {
+        filter: brightness(1.5) drop-shadow(0 0 20px #19778d); /* Adjust the color as needed */
+        opacity: 0.8;
+    }
+    100% {
+        filter: brightness(1) drop-shadow(0 0 10px #19778d); /* Adjust the color as needed */
+        opacity: 1;
+    }
+}

@@ -1,20 +1,15 @@
-.body {
-	margin: 0px;
+body {
+	margin: auto;
 	background-color: #000000;
-	color: #ffffff;
-	font-family: 'Inter', sans-serif;	
-	height: 100vh;
-	display: flex;
+	color: #B1d1ae;
+	height: 95vh;
     align-items: center;
-    justify-content: center;
-    background-image: url('background.png');
-    background-size: cover;
-    background-position: center;
-    transform: translate(0%, -50%);
+    text-align: center;
+    overscroll-behavior-x: hidden;
 }
 
 body::-webkit-scrollbar {
-    width: 12px; 
+    width: 0px; 
 }
 
 body::-webkit-scrollbar-thumb {
@@ -25,42 +20,84 @@ body::-webkit-scrollbar-track {
     background-color: transparent; 
 }
 
-.header {
-      text-align: center;
-      color: whitesmoke;
-    }
-
-.date {
-	position: relative;
+.bodytext {
+    width: 95vw;
+    margin: 25px;
+    padding: 15px;
     text-align: center;
-    transform: translate(0%, -50%);
-    padding: auto;
-    color: white;
-    padding: auto;
-    font-family: 'Inter', sans-serif;
-    display: inline-block;
-    padding: 10px;
-    border: 2px solid whitesmoke;
-    border-radius: 60% 50%;
+    opacity: 1;
+    color: #E0BBD2;
+    z-index: 8;
 }
 
-.h1 {
-    font-size: 70 px;
+.question {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 45px;
+    color: #4e774a;
 }
 
-.h2 {
-    font-size: 55 px;
+.title {
+    font-family: 'Voltaire', sans-serif;
+    font-size: 100px;
+    line-height: 1.2;
+    background-color: #4e774a;
+    color: #B1d1ae;
+    animation: colorChange 2s infinite alternate;
+    border: 2px solid #4e774a;
+    border-radius: 60% 50%; 
+}
+
+@keyframes colorChange {
+  from {
+    color: #6a9366;
+  }
+  to {
+    color: #D1eacf;
+  }
+}
+
+.question2 {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 35px;
+    line-height: 0.5;
+    color: #B1d1ae;
+}
+
+.gridlink {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 35px;
+    line-height: 0.5;
+    color: #B1d1ae;
+    background-color: #B1d1ae;
+    text-decoration: none;
+}
+
+.grid-link:visited {
+    color: #B1d1ae;
+    text-decoration: none;
 }
 
 .grid {
+    position: relative;
+    font-family: 'Advent Pro', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     padding: 30px;
-    }
+    color: #B1d1ae;
+}
 
 .grid-item {
+    font-family: 'Advent Pro', sans-serif;
     padding: 20px;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
+    position: sticky;
+    color: #B1d1ae;
+    text-decoration: none;
+    }
+
+.grid-item:visited {
+    color: #B1d1ae;
+    text-decoration: none;
     }
