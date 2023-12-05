@@ -274,3 +274,12 @@ body::-webkit-scrollbar-track {
         display: block;
     }
 }
+
+nav {
+        line-height: 0.8;
+        display: flex;
+        position: relative;
+        bottom: 5px;
+        left: 46%;
+        justify-content: space-between;
+}

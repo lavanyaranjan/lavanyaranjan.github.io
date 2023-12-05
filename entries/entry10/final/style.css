@@ -120,5 +120,14 @@ body::-webkit-scrollbar-track {
   font-size: 50px;
   position: relative;
   top: 300px;
-  margin-bottom: 100px;
+  margin-bottom: 350px;
+}
+
+nav {
+        line-height: 0.8;
+        display: flex;
+        position: relative;
+        bottom: 5px;
+        left: 46%;
+        justify-content: space-between;
 }

@@ -166,3 +166,12 @@ h3 {
         bottom: 18%;
         left: 5%;
      }
+
+nav {
+        line-height: 0.8;
+        display: flex;
+        position: absolute;
+        bottom: 5px;
+        left: 46%;
+        justify-content: space-between;
+}

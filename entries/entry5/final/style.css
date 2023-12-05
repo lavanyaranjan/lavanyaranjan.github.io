@@ -155,3 +155,12 @@ h3 {
 .image7 {
     transform: translate(177px,300px);
 }
+
+nav {
+        line-height: 0.8;
+        display: flex;
+        position: fixed;
+        bottom: 5px;
+        left: 45%;
+        justify-content: space-between;
+}

@@ -127,3 +127,12 @@ h3 {
 .image5 {
     transform: translate(-307px, 441px,);
 }
+
+nav {
+        line-height: 0.8;
+        display: flex;
+        position: fixed;
+        bottom: 5px;
+        left: 47%;
+        justify-content: space-between;
+}

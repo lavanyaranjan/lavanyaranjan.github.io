@@ -143,3 +143,13 @@ h3 {
     font-family: 'Oswald', sans-serif;
     color: #FFE8C4;
 }
+
+nav {
+        line-height: 0.8;
+        display: flex;
+        position: fixed;
+        bottom: 5px;
+        left: 46%;
+        justify-content: space-between;
+        font-family: 'Oswald', sans-serif;
+}
